@@ -1,26 +1,27 @@
-Bitcoin Core integration/staging tree
+RCC integration/staging tree
 =====================================
 
-http://www.bitcoin.org
+
 
 Copyright (c) 2009-2014 Bitcoin Core Developers
+Copyright (c) 2014 RCC Developers
 
-What is Bitcoin?
+What is RCC?
 ----------------
 
-Bitcoin is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate
+RCC is an experimental new digital currency that enables instant payments to
+anyone, anywhere in the world. RCC uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Bitcoin Core is the name of open source
+out collectively by the network. RCC is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Bitcoin Core software, see http://www.bitcoin.org/en/download.
+the RCC software.
 
 License
 -------
 
-Bitcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+RCC is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
 Development process
@@ -29,7 +30,7 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Bitcoin
+If it is a simple/trivial/non-controversial change, then one of the RCC
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
