@@ -1,0 +1,53 @@
+# junkcoin.conf configuration file. Lines beginning with # are comments.
+
+# Network-related settings:
+
+# Run on the test network instead of the production junkcoin network.
+#testnet=1
+
+# Connect via a socks4 proxy - default none
+#proxy=127.0.0.1:9050
+# Accepting incoming connections
+listen=1
+# Enable UPnP negotiation with router/firewall to accept incoming connections
+#upnp=1
+
+# Use as many addnode= settings as you like to connect to specific peers
+addnode=10.1.1.3
+
+# ... or use as many connect= settings as you like to connect ONLY
+# to specific peers:
+#connect=1.2.3.4
+#connect=10.1.1.*
+
+# Maximum number of inbound+outbound connections.
+#maxconnections=
+
+# JSON-RPC options (for controlling a running ppcoind process)
+
+#Server mode allows Qt to accept JSON-RPC commands, used in solo mining if want this be server
+# server=1
+
+# You must set rpcuser and rpcpassword to secure the JSON-RPC api
+rpcuser=testuser
+rpcpassword=testpass
+
+# How many seconds ppcoin will wait for a complete RPC HTTP request.
+# after the HTTP connection is established. 
+# rpctimeout=30
+
+# By default, only RPC connections from localhost are allowed.  Specify
+# as many rpcallowip= settings as you like to allow connections from
+# other hosts (and you may use * as a wildcard character):
+rpcallowip=127.0.0.1
+
+# Listen for RPC connections on this TCP port:
+rpcport=9772
+
+# You can use junkcoind to send commands to junkcoind
+# running on another host using this option:
+rpcconnect=127.0.0.1
+
+
+
+
