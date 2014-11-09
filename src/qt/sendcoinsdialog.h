@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SENDCOINSDIALOG_H
-#define SENDCOINSDIALOG_H
+#ifndef BITCOIN_QT_SENDCOINSDIALOG_H
+#define BITCOIN_QT_SENDCOINSDIALOG_H
 
 #include "walletmodel.h"
 
@@ -14,13 +14,13 @@ class OptionsModel;
 class SendCoinsEntry;
 class SendCoinsRecipient;
 
-QT_BEGIN_NAMESPACE
-class QUrl;
-QT_END_NAMESPACE
-
 namespace Ui {
     class SendCoinsDialog;
 }
+
+QT_BEGIN_NAMESPACE
+class QUrl;
+QT_END_NAMESPACE
 
 /** Dialog for sending bitcoins */
 class SendCoinsDialog : public QDialog
@@ -47,7 +47,8 @@ public slots:
     void accept();
     SendCoinsEntry *addEntry();
     void updateTabsAndLabels();
-    void setBalance(qint64 balance, qint64 unconfirmedBalance, qint64 immatureBalance);
+    void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance,
+                    const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance);
 
 private:
     Ui::SendCoinsDialog *ui;
@@ -82,4 +83,4 @@ signals:
     void message(const QString &title, const QString &message, unsigned int style);
 };
 
-#endif // SENDCOINSDIALOG_H
+#endif // BITCOIN_QT_SENDCOINSDIALOG_H
